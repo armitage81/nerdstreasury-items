@@ -5,8 +5,8 @@
     <title>Nerd's Treasury - Item list</title>
   </head>
 
-  <body>
-    
+  <body>   
+    <p th:text="${name}"/>
     <table>
     	<thead>
         	<tr>
@@ -32,6 +32,8 @@
         	</tr>
     	</tbody>
 	</table>
-    
+    <form name="logoutForm" th:action="@{/logout}" method="post">
+      <input type="submit" value="Sign Out"/>
+   </form> 
   </body>
 </html>
