@@ -6,10 +6,12 @@
   </head>
 
   <body>
-    <h1>Welcome to...</h1>
+  	
+  	<header th:insert="/fragments/header.html :: header"> </header>
+  
     <img th:src="@{/images/NerdsTreasuryItemsLogo.png}"/>
-    <a href="/login">Login</a>
-    <a href="/register">Register</a>
-    <a href="/item-list">Item List</a>
+    
+    <div th:replace="/fragments/footer.html :: footer"></div>
+    
   </body>
 </html>

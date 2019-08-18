@@ -1,4 +1,4 @@
-package de.antonafanasjew.nerdstreasury.items.security;
+package de.antonafanasjew.nerdstreasury.items.presentation.forms;
 
 import de.antonafanasjew.nerdstreasury.items.model.User;
 import org.springframework.security.crypto.password.PasswordEncoder;

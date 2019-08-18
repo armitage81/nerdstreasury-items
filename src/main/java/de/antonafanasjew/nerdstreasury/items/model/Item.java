@@ -47,11 +47,4 @@ public class Item {
 	@Column(name="GENRE")
 	private final String genre;
 	
-	@NotNull
-	@Size(min=1, message="System must not be empty")
-	@Column(name="SYSTEM")
-	private final String system;
-	
-	
-	
 }

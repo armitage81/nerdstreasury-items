@@ -6,6 +6,9 @@
   </head>
 
   <body>   
+  
+  	<header th:insert="/fragments/header.html :: header"> </header>
+  
     <p th:text="${name}"/>
     <table>
     	<thead>
@@ -15,12 +18,11 @@
             	<th>Developer</th>
             	<th>Publisher</th>
             	<th>Genre</th>
-            	<th>System</th>
         	</tr>
     	</thead>
     	<tbody>
 	    	<tr th:if="${items.empty}">
-    	        <td colspan="6"> No Items Available </td>
+    	        <td colspan="5"> No Items Available </td>
         	</tr>
         	<tr th:each="item : ${items}">
             	<td><span th:text="${item.title}">Title</span></td>
@@ -28,12 +30,17 @@
             	<td><span th:text="${item.developer}">Developer</span></td>
             	<td><span th:text="${item.publisher}">Publisher</span></td>
             	<td><span th:text="${item.genre}">Genre</span></td>
-            	<td><span th:text="${item.system}">System</span></td>
         	</tr>
     	</tbody>
 	</table>
+	
+	<a href="/item">New Item</a>
+	
     <form name="logoutForm" th:action="@{/logout}" method="post">
       <input type="submit" value="Sign Out"/>
-   </form> 
+   </form>
+   
+   <div th:replace="/fragments/footer.html :: footer"></div>
+    
   </body>
 </html>

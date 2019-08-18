@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import de.antonafanasjew.nerdstreasury.items.model.User;
 import de.antonafanasjew.nerdstreasury.items.persistence.UserRepository;
-import de.antonafanasjew.nerdstreasury.items.security.RegistrationForm;
+import de.antonafanasjew.nerdstreasury.items.presentation.forms.RegistrationForm;
 
 @Controller
 @RequestMapping("register")

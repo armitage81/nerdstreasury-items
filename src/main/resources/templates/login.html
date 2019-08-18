@@ -5,6 +5,9 @@
         <title>Login</title>
     </head>
     <body>
+    
+    	<header th:insert="/fragments/header.html :: header"> </header>
+    	
         <div th:if="${param.error}">
             Invalid username or password.
         </div>
@@ -16,5 +19,6 @@
             <div><label> Password: <input type="password" name="password"/> </label></div>
             <div><input type="submit" value="Sign In"/></div>
         </form>
+        <div th:replace="/fragments/footer.html :: footer"></div>
     </body>
 </html>

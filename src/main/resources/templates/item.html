@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="https://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+    <head>
+        <title>Item</title>
+    </head>
+    <body>
+    
+    	<header th:insert="/fragments/header.html :: header"> </header>
+    	
+    	<h1>Item editor</h1>
+        <form th:action="@{/item}" method="post" id="itemForm">
+            <div><label> Title: <input type="text" name="title"/> </label></div>
+            <div><label> Sort term: <input type="text" name="sortTerm"/> </label></div>
+            <div><label> Developer: <input type="text" name="developer"/> </label></div>
+            <div><label> Publisher: <input type="text" name="publisher"/> </label></div>
+            <div><label> Genre: <input type="text" name="genre"/> </label></div>
+            <div><input type="submit" value="Submit"/></div>
+        </form>
+        <a href="/item-list">Back to item list</a>
+        <div th:replace="/fragments/footer.html :: footer"></div>
+    </body>
+</html>
