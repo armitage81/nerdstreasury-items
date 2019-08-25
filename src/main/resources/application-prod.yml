@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+logging:
+  file: /var/log/nerdstreasury/nerdstreasury.log
+  level:
+    root: WARN
+    de:
+      afanasjew:
+        nerdstreasury: INFO
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none 
+  datasource:
+    schema: classpath:/db_schema.sql
+    data: classpath:/db_data.sql

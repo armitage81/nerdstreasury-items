@@ -1,0 +1,36 @@
+{
+	"groups": 
+	[
+		{
+		  "name": "custom"
+		},
+		{
+		  "name": "custom.application",
+		  "type": "de.antonafanasjew.nerdstreasury.items.properties.ApplicationProperties"
+		},
+		{
+		  "name": "custom.application.paging",
+		  "type": "de.antonafanasjew.nerdstreasury.items.properties.PagingProperties"
+		}
+	],
+	"properties":
+	[
+		{
+			"name": "custom.application.name",
+			"type": "java.lang.String"
+		},
+		{
+			"name": "custom.application.author",
+			"type": "java.lang.String"
+		},
+		{
+			"name": "custom.application.title",
+			"type": "java.lang.String"
+		},
+		{
+			"name": "custom.application.paging.pageSize",
+			"type": "java.lang.Integer"
+		}
+	]
+	
+}

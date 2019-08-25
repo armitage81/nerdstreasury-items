@@ -1,0 +1,15 @@
+custom:
+  application:
+    name: Nerd's Treasury
+    author: Anton Afanasjew
+    title: ${custom.application.name} by ${custom.application.author}
+    paging:
+      pageSize: 10
+        
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none 
+  datasource:
+    schema: classpath:/db_schema.sql
+    data: classpath:/db_data.sql

@@ -1,0 +1,17 @@
+server:
+  port: 9999
+
+logging:
+  file: /c:/temp/spring/nerdstreasury/logs/nerdstreasury.log
+  level:
+    root: INFO
+    de:
+      afanasjew:
+        nerdstreasury: DEBUG
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: none 
+  datasource:
+    schema: classpath:/db_schema.sql
+    data: classpath:/db_data.sql
